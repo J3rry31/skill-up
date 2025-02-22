@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .main > div{
+        background: dodgerblue;
+       
+    }
+    .main{
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(3,1fr);
+        /* grid-template-columns: 40% 30% 30% ;
+        /* column-gap: 1em; */
+        /* gap: 10px; */ 
+       /* grid-auto-rows: 100px; */
+       grid-auto-rows: minmax(100px,auto);
+    } 
+    .main > div:nth-child(odd){
+        background: grey;
+    }
+</style>
+</head>
+<body>
+  <div class="main">
+    <div class="container2">
+        <h2> this is my div container working well</h2>
+    </div>
+    <div class="container1">
+       <h1> welcome to my div</h1>
+
+    </div>
+    <div class="container2">
+        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum</p>
+    </div>
+    <div class="container1">
+       <h1> welcome to my div</h1>
+
+    </div>
+
+    <div class="container1">
+        <h1> welcome to my div</h1>
+ 
+     </div>
+
+     <div class="container1">
+        <h1> welcome to my div</h1>
+ 
+     </div>
+  </div>  
+
+
+
+</body>
+</html>
